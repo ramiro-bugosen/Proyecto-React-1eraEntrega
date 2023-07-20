@@ -43,7 +43,7 @@ nav {
 }
 
 nav h2 {
-  position: fixed;
+  position: absolute;
   left: 40px;
   top: 15px;
   color: rgb(255, 255, 255);
@@ -80,11 +80,14 @@ button:active {
 
 .carritoContainer {
   font-size: 25px;
-  position: fixed;
+  position: absolute;
   top: 30px;
   right: 50px;
 }
 
+.ads {
+  background-color: #3e6ead;
+}
 
 
 
@@ -115,4 +118,5 @@ button:active {
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
 }
+
 
