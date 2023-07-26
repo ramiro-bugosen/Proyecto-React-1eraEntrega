@@ -5,7 +5,10 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
     return (
         <nav>
+        <NavLink to="/" className="navbar-link" activeClassName="active-navbar-link">
             <h2>FastBurger</h2>
+            <img src="https://i.pinimg.com/originals/30/3c/d5/303cd5c4e2169130a9ddd90bfab76982.png" style={{width: "40px", position: "absolute", top: "30px", left:"170px"}}></img>
+        </NavLink>
             <div className="navbar" style={{ paddingLeft: '500px'}}> 
             <NavLink to="/" className="navbar-link" activeClassName="active-navbar-link">
                     <button>

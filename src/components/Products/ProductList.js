@@ -4,11 +4,10 @@ import products from "../../mocks/products.json";
 import UseMock from "../../Hooks/UseMock";
 import ProductDetail from "./ProductDetail";
 import Container from 'react-bootstrap/Container';
-import ItemListContainer from "../ItemListContainer/ItemListContainer";
 
 const ProductList = () => {
   const { data, loading } = UseMock(products);
-  if (loading) return <h1>Cargando</h1>;
+  if (loading) return <h1 style={{position:'absolute' ,top:'50%', left: '45%'}}>Cargando...</h1>;
 
   return (
     <>

@@ -1,0 +1,123 @@
+[
+ {
+    "id": 13,
+    "category" : "Bebidas",
+    "img" : "https://burgerkingec.com/wp-content/uploads/2020/05/Gaseosas.png",
+    "products": [{
+        "id": 0,
+        "category": "bebidas",
+        "producto": "cocacola",
+        "precio": 350,
+        "img": "https://www.pngmart.com/files/1/Coca-Cola-PNG-Photos.png",
+        "stock": "50"
+      },
+      {
+        "id": 1,
+        "category": "bebidas",
+        "producto": "fanta",
+        "precio": 350,
+        "img": "https://www.pngplay.com/wp-content/uploads/12/Fanta-PNG-HD-Free-File-Download.png",
+        "stock": "50"
+      },
+      {
+        "id": 2,
+        "category": "bebidas",
+        "producto": "sprite",
+        "precio": 350,
+        "img": "https://www.pngmart.com/files/1/Sprite-Bottle-PNG-File.png",
+        "stock": "50"
+      },
+      {
+        "id": 3,
+        "category": "bebidas",
+        "producto": "agua",
+        "precio": 300,
+        "img": "https://www.pnguniverse.com/wp-content/uploads/2021/08/Botella-con-agua-eecff373.png",
+        "stock": "50"
+      },
+      {
+        "id": 4,
+        "category": "bebidas",
+        "producto": "aguasaborizada",
+        "precio": 350,
+        "img": "https://supermaxsa.com.ar/wp-content/uploads/2020/07/3832.png",
+        "stock": "50"
+      }]
+ },
+ { "id": 14,
+    "category" : "Hamburguesas",
+    "img" : "https://www.pngplay.com/wp-content/uploads/2/Burger-Download-Free-PNG.png",
+    "products": [
+        {
+            "id": 8,
+            "category": "hamburguesas",
+            "producto": "cheddar",
+            "precio": 1200,
+            "img": "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kvXQsZky/200/200/original?country=uy",
+            "stock": "50"
+          },
+          {
+            "id": 9,
+            "category": "hamburguesas",
+            "producto": "clasica",
+            "precio": 1300,
+            "img": "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kqXB9EyQ/200/200/original?country=ar",
+            "stock": "50"
+          },
+          {
+            "id": 10,
+            "category": "hamburguesas",
+            "producto": "simple",
+            "precio": 1000,
+            "img": "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kqXbQnzY/200/200/original?country=ar",
+            "stock": "50"
+          },
+          {
+            "id": 11,
+            "category": "hamburguesas",
+            "producto": "doble",
+            "precio": 1500,
+            "img": "https://trending-media.com/wp-content/uploads/2020/11/McDonalds-PedidosYA-transp.png",
+            "stock": "50"
+          },
+          {
+            "id": 12,
+            "category": "hamburguesas",
+            "producto": "mega",
+            "precio": 2000,
+            "img": "https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c1a8.png",
+            "stock": "50"
+          }
+    ] 
+},
+{ "id": 15,
+    "category" : "Guarniciones",
+    "img" : "https://www.pngmart.com/files/17/Crunchy-French-Fries-PNG-File.png",
+    "products": [
+        {
+            "id": 5,
+            "category": "guarniciones",
+            "producto": "papas",
+            "precio": 800,
+            "img": "https://static.vecteezy.com/system/resources/previews/013/442/145/non_2x/crispy-and-delicious-french-fries-free-png.png",
+            "stock": "50"
+          },
+          {
+            "id": 6,
+            "category": "guarniciones",
+            "producto": "batatas",
+            "precio": 700,
+            "img": "https://static.vecteezy.com/system/resources/previews/013/442/145/non_2x/crispy-and-delicious-french-fries-free-png.png",
+            "stock": "50"
+          },
+          {
+            "id": 7,
+            "category": "guarniciones",
+            "producto": "nuggets",
+            "precio": 900,
+            "img": "https://www.pngmart.com/files/16/Crunchy-KFC-Chicken-Transparent-PNG.png",
+            "stock": "50"
+          }
+    ]
+}
+]
