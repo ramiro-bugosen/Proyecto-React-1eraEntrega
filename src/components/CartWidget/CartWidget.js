@@ -1,11 +1,24 @@
-import cart from './assets/cart.png';
+import cartimg from './assets/cartimg.png';
+import { CartContext } from '../Context/CartContext';
+import { useContext, useState } from 'react';
+import { Link } from 'react-router-dom';
+import CartView from '../Checkout/CartView';
 
 const CartWidget = () => {
+    const { cart } = useContext(CartContext);
+    const [showCart, setShowCart] = useState(false);
+
+  const toggleCart = () => {
+    setShowCart(!showCart);
+  }
     return (
-        <div className="carritoContainer">
-            <img className="carrito" src={cart} alt="cart-widget"/>
-            0
+        <Link to={"/cart"}>
+            <div className="carritoContainer">
+            <img onClick={toggleCart} className="carrito" src={cartimg} alt="cart-widget"/>{cart.items.length}
+            
+
         </div>
+        </Link>
     )
 }
 

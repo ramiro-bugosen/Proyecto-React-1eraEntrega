@@ -1,11 +1,22 @@
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import ProductInfo from "./ProductInfo";
+import { useState, useContext } from "react";
+import { CartContext } from "../Context/CartContext";
+import AddToCartButton from "../AddToCartButton";
+import ItemCount from "../ItemCount/ItemCount";
+import { Button } from "@mui/material";
+
 const ProductDetail = ({ product }) => {
   const { producto, precio, img, stock } = product;
+  const [selectedQuantity, setSelectedQuantity] = useState(1);
+  const { addToCart } = useContext(CartContext);
+  const handleAddToCart = () => {
+    addToCart(product, selectedQuantity);
+  };
 
   return (
     <>
-      <Card
+      <Card 
         style={{
           width: "400px",
           display: "flex",
@@ -26,8 +37,13 @@ const ProductDetail = ({ product }) => {
           <Card.Title style={{fontSize:'20px'}}>{producto}</Card.Title>
           <Card.Text style={{color:'#263A29'}}>${precio}</Card.Text>
           <Card.Text>Stock:{stock}</Card.Text>
-        </Card.Body>
-      </Card>
+          <ItemCount stock={stock} initial={selectedQuantity} onAdd={(quantity) => setSelectedQuantity(quantity)}/>
+          <AddToCartButton product={product} />
+        </Card.Body> 
+        </Card>
+        
+      
+     
     </>
   );
 };

@@ -1,3 +1,4 @@
+import { Button } from "@mui/material"
 import { useState } from "react"
 
 const ItemCount = ({stock, initial, onAdd})=> {
@@ -18,13 +19,13 @@ const ItemCount = ({stock, initial, onAdd})=> {
 
     return (
         <div className="contador">
-            <div className="contadorHijo">
-                <button className="botonContador" onClick={increment}>+</button>
+            <div className="contadorHijo" style={{display:'flex', fontSize: '20px'}}>
+                <Button style={{fontSize:'20px'}} className="botonContador" onClick={increment}>+</Button>
                 <h4 className="numeroContador">{quantity}</h4>
-                <button className="botonContador" onClick={decrement}>-</button>
+                <Button style={{fontSize:'20px'}} className="botonContador" onClick={decrement}>-</Button>
             </div>
             <div>
-                <button className="botonContador" onClick={()=> onAdd(quantity)} disabled={!stock}>Añadir al carrito</button>
+                <Button className="botonContador" onClick={()=> onAdd(quantity)} disabled={!stock}></Button>
             </div>
         </div>
     )
